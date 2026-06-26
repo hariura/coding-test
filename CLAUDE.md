@@ -25,9 +25,11 @@
 
 ## 폴더 구조
 
+이 프로젝트 루트(`~/Desktop/github/coding-test`)가 학습 시스템의 메인이다. 클로드 코드가 루트에서 이 CLAUDE.md를 자동으로 읽는다.
+
 ```
-.
-├── CLAUDE.md                       ← 이 파일
+.  (coding-test 루트 = 메인)
+├── CLAUDE.md                       ← 이 파일 (자동 로드)
 │
 ├── agents/                         에이전트 프롬프트 3종
 │   ├── 모의시험.md                  문제 출제 + 4층 채점 + 양치기
@@ -44,8 +46,13 @@
 │   ├── 즉각대응_플레이북.md         모르는 문제 30초 대응
 │   └── 시작_프롬프트.md             새 세션 시작 시 복붙
 │
-└── memory/                         이 폴더 옮긴 후 ~/.claude/projects/-Users-jh-Desktop-cote/memory/로 이동
-    └── project_learning_system_meta.md
+├── (루트의 *.ipynb + BAEKJUN/ + DP/ + test review/)
+│       기존 풀이 자산 — 양치기·카탈로그의 재료. 아직 패턴별로 정리 안 됨(의도된 상태).
+│       "사용자 코드 살려라" 원칙대로, 이 풀이들의 실패·피드백 흔적이 약점 추적의 원재료다.
+│       정리(이동)는 사용자와 함께 하나씩 — 단순 알고리즘 라벨로 기계적 이동 금지.
+│
+└── 메모리                          ~/.claude/projects/-Users-jh-Desktop-github-coding-test/memory/
+        project_learning_system_meta.md (자동 로드)
 ```
 
 ## 자주 쓰는 작업
@@ -94,7 +101,7 @@ agents/카탈로그_검증.md 읽고 그 지시 따라.
 
 ## 메모리
 
-이 폴더가 클로드 코드 프로젝트로 인식되면 `~/.claude/projects/-Users-jh-Desktop-cote/memory/`가 자동 생성됨. 메모리 폴더 안의 파일을 그쪽으로 옮기면 자동 로드.
+이 프로젝트의 메모리 경로: `~/.claude/projects/-Users-jh-Desktop-github-coding-test/memory/` (세션마다 자동 로드).
 
 자동 로드 대상:
 - `project-learning-system-meta` — 학습 시스템 메타 (도메인 무관)
