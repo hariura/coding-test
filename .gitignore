@@ -1,0 +1,11 @@
+# Jupyter 자동생성 백업 (디스크엔 남지만 git 추적 안 함)
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
